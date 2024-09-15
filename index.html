@@ -7,9 +7,16 @@
 </head>
 <body>
  <h1>Media Design</h1> 
- <h1>movie making</h1>
- <img width="1000" src="logo.jpg" alt="">  
+ <h1>Movie Making</h1>
+ <img  width: 300px;
+
+ height: 200px;
+
+ margin: -600px 9px 9px -2px; src="logo.jpg" alt="">  
  <p>Vijay Kanna </p>
+ <aside> 
+  <p> new </p>
+ </aside>
                                                  
                                                 <!-- this script is provided by https://www.htmlbestcodes.com coded by: Kerixa Inc. -->
 <!DOCTYPE html>
@@ -32,7 +39,6 @@
 
 <!-- font awesome library include 4.7 -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -46,12 +52,25 @@
 
   position: absolute;
 
-  top: 50%;
+  top: 70%;
 
-  left: 50%;
+  left: 70%;
 
-  z-index: 2000;
+  z-index: 100;
 
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #93e90a;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 
@@ -112,19 +131,18 @@ and add that to the previous value (assuming each.component is a
 
 .loader1-spinner-item {
 
-  width: 1000px;
+  width: 300px;
 
-  height: 1000px;
+  height: 300px;
 
-  margin: -100px 0px 1px -100px;
-
-  border: 5px white solid;
+  margin: -400px 9px 9px -20px;
+  border: 5px rgb(241, 22, 22) solid;
 
   border: 5px solid transparent;
 
-  border-top-color: white;
+  border-top-color: rgb(189, 25, 148);
 
-  border-bottom-color: white;
+  border-bottom-color: rgb(155, 13, 79);
 
   animation: loader1-spinner-spin 3s linear infinite;
 
@@ -146,19 +164,71 @@ and add that to the previous value (assuming each.component is a
 
   bottom: 5px;
 
-  border: 5px solid #f57d1f;
+  border: 5px solid #c91e65;
 
   border: 5px solid transparent;
 
-  border-top-color: #f57d1f;
+  border-top-color: #700f4b;
 
-  border-bottom-color: #f57d1f;
+  border-bottom-color: #c91192;
 
   animation: loader1-spinner-spin 1.5s linear infinite;
 
 }
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Georgia", serif;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: black;
+}
 
-
+main {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+@media (min-width: 30px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    width: 130%;
+    margin-left: -15%;
+  }
+}
+main section:not(:first-child):not(:last-child):hover {
+  -webkit-box-flex: 2;
+          flex: 2;
+}
+main section:not(:first-child):not(:last-child):hover:after {
+  opacity: .8;
+}
+main section:not(:first-child):not(:last-child):hover article {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity .2s .2s, -webkit-transform .2s .2s;
+  transition: opacity .2s .2s, -webkit-transform .2s .2s;
+  transition: opacity .2s .2s, transform .2s .2s;
+  transition: opacity .2s .2s, transform .2s .2s, -webkit-transform .2s .2s;
+}
+section:nth-child(1):before {
+  background-color: #e60000;
+  background-image: url(https://www.htmlbestcodes.com/files/3-1.jpg);
+}
+.hide-images section:nth-child(1):before {
+  background-image: none;
+}
+section:first-child:before, section:last-child:before {
+  background-color: #660000;
+}
 
 /* line 56, ../../../../loaders/scss/loaders/_spinner1.scss */
 
@@ -174,13 +244,13 @@ and add that to the previous value (assuming each.component is a
 
   bottom: 15px;
 
-  border: 5px solid #405e7f;
+  border: 5px solid #b8165a;
 
   border: 5px solid transparent;
 
-  border-top-color: #405e7f;
+  border-top-color: #ce36c6;
 
-  border-bottom-color: #405e7f;
+  border-bottom-color: #bd0eb4;
 
   animation: loader1-spinner-spin 0.75s linear infinite;
 
@@ -516,7 +586,7 @@ body{
 }
 body
 a{
-	color: white;
+	color: rgb(6, 7, 2);
 }
 a:hover, a:visited{
 	color: orange;
@@ -536,7 +606,7 @@ header {
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: white;
+  color: rgb(187, 10, 10);
 }
 
 </style>
@@ -574,7 +644,7 @@ header {
 
     <div class="loader1-spinner-item"></div>
 
-    <div class="loader1-spinner-text">vijaykanna</div>
+    <div class="loader1-spinner-text"></div>
 
 
 
